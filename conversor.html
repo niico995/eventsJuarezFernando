@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor</title>
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex justify-center items-center">
+    <a href="./imc.html">Ej 3</a>
+    <div
+      class="conteiner bg-slate-400 w-1/4 h-96 flex flex-col justify-center items-center gap-8"
+    >
+      <div
+        class="conteiner bg-slate-400 w-1/4 h-96 flex flex-col justify-center items-center gap-2"
+      >
+        <p class="font-bold text-md">Monto moneda local</p>
+        <label class="flex flex-col font-bold text-md"
+          >sin comas ni puntos<input type="number" id="pesos"
+        /></label>
+        <p class="font-bold text-md">Monto en dólares</p>
+        <label class="flex flex-col font-bold text-md"
+          >sin comas ni puntos<input type="number" id="dolares"
+        /></label>
+        <div class="flex gap-4">
+          <button
+            type="submit"
+            id="calculador"
+            class="w-44 h-16 bg-yellow-500 border-2 border-black shadow-[-4px_2px_4px_black] text-2xl font-bold"
+          >
+            Convert
+          </button>
+          <button
+            type="submit"
+            id="limpiador"
+            class="w-44 h-16 bg-yellow-500 border-2 border-black shadow-[-4px_2px_4px_black] text-2xl font-bold"
+          >
+            Delete
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Conversor pesos dolar -->
+    <div
+      class="conteiner bg-slate-400 w-1/4 h-96 flex flex-col justify-center items-center gap-2 ml-8"
+    >
+      <p class="font-bold text-md">Pesos</p>
+      <label class="flex flex-col font-bold text-md"
+        >sin comas ni puntos<input type="number" id="pesuquis"
+      /></label>
+      <p class="font-bold text-md">Dolares</p>
+      <label class="flex flex-col font-bold text-md"
+        >sin comas ni puntos<input type="number" id="dolar" readonly
+      /></label>
+      <div class="flex gap-4">
+        <button
+          type="submit"
+          id="convertidor"
+          class="w-44 h-16 bg-yellow-500 border-2 border-black shadow-[-4px_2px_4px_black] text-2xl font-bold"
+        >
+          Convert
+        </button>
+        <button
+          type="submit"
+          id="deleteador"
+          class="w-44 h-16 bg-yellow-500 border-2 border-black shadow-[-4px_2px_4px_black] text-2xl font-bold"
+        >
+          Delete
+        </button>
+      </div>
+    </div>
+
+    <!-- Dolar a pesitos -->
+    <div
+      class="conteiner bg-slate-400 w-1/4 h-96 flex flex-col justify-center items-center gap-2 ml-8"
+    >
+      <p class="font-bold text-md">Dolares</p>
+      <label class="flex flex-col font-bold text-md"
+        >sin comas ni puntos<input type="number" id="fuertesDolares"
+      /></label>
+      <p class="font-bold text-md">Pesos</p>
+      <label class="flex flex-col font-bold text-md"
+        >sin comas ni puntos<input type="number" id="humildesPesos" readonly
+      /></label>
+      <div class="flex gap-4">
+        <button
+          type="submit"
+          id="traspaso"
+          class="w-44 h-16 bg-yellow-500 border-2 border-black shadow-[-4px_2px_4px_black] text-2xl font-bold"
+        >
+          Convert
+        </button>
+        <button
+          type="submit"
+          id="borron"
+          class="w-44 h-16 bg-yellow-500 border-2 border-black shadow-[-4px_2px_4px_black] text-2xl font-bold"
+        >
+          Delete
+        </button>
+      </div>
+    </div>
+
+    <script src="./conversor.js"></script>
+  </body>
+</html>

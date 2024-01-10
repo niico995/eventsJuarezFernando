@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imc</title>
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex justify-center items-center">
+    <a href="./input.html">Ej 2</a>
+    <div
+      class="conteiner bg-slate-400 w-96 h-96 flex flex-col justify-center items-center gap-2"
+    >
+      <p>Estatura</p>
+      <label class="flex flex-col font-bold text-md"
+        >en centimetros<input type="number" id="estatura"
+      /></label>
+      <p>Peso</p>
+      <label class="flex flex-col font-bold text-md"
+        >en kilogramos<input type="number" id="peso"
+      /></label>
+      <button
+        type="submit"
+        id="calculador"
+        class="w-44 h-16 bg-yellow-500 border-2 border-black shadow-[-4px_2px_4px_black] text-2xl font-bold"
+      >
+        Calculate
+      </button>
+    </div>
+    <div class="invisible ml-8" id="resultado">
+      <div
+        class="conteiner bg-slate-400 w-96 h-60 flex flex-col justify-center items-center gap-2"
+      >
+        <p>Resultado</p>
+        <p>su indice de masa corporal es</p>
+        <textarea
+          title="cajita"
+          id="resultadoImc"
+          cols="30"
+          rows="10"
+          class="h-12 w-60"
+        ></textarea>
+      </div>
+      
+    </div>
+    <a href="/conversor.html">Ej 4</a>
+
+    <script src="./imc.js"></script>
+  </body>
+</html>
